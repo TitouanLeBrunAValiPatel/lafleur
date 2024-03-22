@@ -8,6 +8,7 @@
         <?php
                 $set = $DB->query('SELECT pdt_ref, pdt_designation, pdt_prix, pdt_image, pdt_categorie FROM produit INNER JOIN categorie ON cat_code=pdt_categorie WHERE cat_code='.$_GET["categ"]);            
                 foreach ($set as $key) {
+                    // TODO : ajout une class "price" pour le prix du produit
                     echo '<div class="product"><a class="full-a" href="./catalogue.php?categ='.$key->pdt_categorie.'"">
                     <img class="full-img" src="Images/'.$key->pdt_image .'.jpg"/>
                     <p>' . $key->pdt_designation .'</p><br>

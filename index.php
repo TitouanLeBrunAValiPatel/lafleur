@@ -7,6 +7,7 @@
 				$sql = "select * from produit where pdt_ref IN(1,4,9);";
 				$req = $DB->query($sql);
 				foreach ($req as $key) {
+					// TODO : ajout une class "price" pour le prix du produit
 					echo '<div class="product"><a class="full-a" href="./catalogue.php?categ='.$row->cat_code.'"">
 							<img class="full-img" src="Images/'.$key->pdt_image .'.jpg"/>
 							<p>' . $key->pdt_designation .'</p><br>
