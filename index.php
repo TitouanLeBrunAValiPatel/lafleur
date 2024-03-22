@@ -10,7 +10,7 @@
 					echo '<div class="product"><a class="full-a" href="./catalogue.php?categ='.$row->cat_code.'"">
 							<img class="full-img" src="Images/'.$key->pdt_image .'.jpg"/>
 							<p>' . $key->pdt_designation .'</p><br>
-							<p>' . $key->pdt_prix .'€</p><br>
+							<p class="price">' . $key->pdt_prix .'€</p><br>
 							<a class="ajout-panier" href="./panierajout.php?id=' . $key->pdt_ref . '">Ajouter au panier</a>
 					
 							</a></div>';
