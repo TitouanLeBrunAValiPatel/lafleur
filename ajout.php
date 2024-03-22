@@ -20,11 +20,19 @@
                                 $pdt_categorie = $_POST['pdt_categorie'];
                                 $pdt_prix = $_POST['pdt_prix'];
                                 $pdt_designation = $_POST['pdt_designation'];
-                                $DB->query("INSERT INTO `produit` ( `pdt_designation`, `pdt_prix`, `pdt_categorie`, `pdt_image`) VALUES (:pdt_designation,:pdt_prix,:pdt_categorie,'bulbes_begonia');",[
-                                    'pdt_designation' => $pdt_designation,
-                                    'pdt_prix' => $pdt_prix,
-                                    'pdt_categorie' => $pdt_categorie
-                                ]);  
+                                /*
+                                     TODO : créer la requete SQL pour ajouter un produit à la base de données
+                                     tu peux t'appuyer de la requete faite dans le fichier signin.php a la ligne 28
+
+                                
+                                     - Montrer la table dans la base de donnée
+                                     - Montrer le ficheir signin.php
+
+                                     aide, pour ajouter quelques chose dans une base de donnée il faut UTILISER INSERT INTO
+                                     la méthode query prends 2 parametres.
+                                     
+                                */
+
                             // echo "La fleur a bien été ajouter.";
                             header('Location: ./catalogue.php?categ='. $pdt_categorie .'');
                         } ?>
