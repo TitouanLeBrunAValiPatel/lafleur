@@ -1,10 +1,10 @@
 <?php
 class DB{
 
-    private $HOST = 'tonhost.net';
-    private $database = 'database_name';
-    private $user = 'user';
-    private $pass = 'tonpassword';
+    private $HOST = 'localhost';
+    private $database = 'lafleur';
+    private $user = 'root';
+    private $pass = '';
     private $cnx;
 
 
